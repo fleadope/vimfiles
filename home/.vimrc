@@ -231,6 +231,8 @@ if has('gui_running')
   au! BufWritePost *.md,*.markdown,*.mkd :MDP
 endif
 
+" autocmd FileType objc set makeprg=rake
+
 " Enable autosave
 au FocusLost * :wa
 
