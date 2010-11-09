@@ -106,9 +106,6 @@
 [submodule "home/.vim/bundle/json.vim"]
 	path = home/.vim/bundle/json.vim
 	url = http://github.com/vim-scripts/JSON.vim.git
-[submodule "home/.vim/bundle/processing.vim"]
-	path = home/.vim/bundle/processing.vim
-	url = http://github.com/vim-scripts/Processing.git
 [submodule "home/.vim/bundle/vim-speeddating"]
 	path = home/.vim/bundle/vim-speeddating
 	url = http://github.com/tpope/vim-speeddating.git
