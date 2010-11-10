@@ -13,14 +13,14 @@ let g:colors_name = "colorblind"
 "
 " COLOR                                 BRIGHT
 " -----------------------------------------------------------------------------
-" Black        #000000              |   Gray             #555555  PreCondit
+" Black        #000000  ---         |   Gray             #555555  ---
 " Red          #FF0000  Error       |   Light Red        #E52253  Include/Exception
-" Green        #3D9C00  Macro       |   Light Green      #96FF32  String
+" Green        #3D9C00  PreCondit   |   Light Green      #96FF32  String
 " Brown        #FF9600  Character   |   Yellow           #FFCD00  Label
 " Blue         #0080FF  Structure   |   Light Blue       #96CDFF  Keyword
 " Magenta      #FF00FF  SpComment   |   Light Magenta    #FF80FF  Type
 " Cyan         #00FFFF  Boolean     |   Light Cyan       #782DBD  Comment
-" Light Gray   #999999  Number      |   White            #FFFFFF  Repeat
+" Light Gray   #999999  Number      |   White            #FFFFFF  ---
 " -----------------------------------------------------------------------------
 
 hi Normal                           guifg=#FFFFFF   guibg=#000000 gui=NONE      ctermfg=White    ctermbg=Black  cterm=NONE
@@ -61,12 +61,12 @@ hi Identifier                       guifg=#FF80FF   guibg=NONE  gui=NONE        
 hi Include                          guifg=#E52253   guibg=NONE  gui=italic      ctermfg=Red      ctermbg=NONE   cterm=bold
 hi Keyword                          guifg=#96CDFF   guibg=NONE  gui=NONE        ctermfg=Blue     ctermbg=NONE   cterm=bold
 hi Label                            guifg=#FFCD00   guibg=NONE  gui=NONE        ctermfg=Yellow   ctermbg=NONE   cterm=bold
-hi Macro                            guifg=#3D9C00   guibg=NONE  gui=italic      ctermfg=Green    ctermbg=NONE   cterm=NONE
+hi Macro                            guifg=#0080FF   guibg=NONE  gui=italic      ctermfg=Blue     ctermbg=NONE   cterm=NONE
 hi Number                           guifg=#999999   guibg=NONE  gui=NONE        ctermfg=Gray     ctermbg=NONE   cterm=bold
-hi Operator                         guifg=NONE      guibg=NONE  gui=NONE        ctermfg=NONE     ctermbg=NONE   cterm=NONE
-hi PreCondit                        guifg=#555555   guibg=NONE  gui=NONE        ctermfg=Gray     ctermbg=NONE   cterm=NONE
+hi Operator                         guifg=#96CDFF   guibg=NONE  gui=NONE        ctermfg=Blue     ctermbg=NONE   cterm=bold
+hi PreCondit                        guifg=#3D9C00   guibg=NONE  gui=italic      ctermfg=Green    ctermbg=NONE   cterm=NONE
 hi PreProc                          guifg=#FFCD00   guibg=NONE  gui=NONE        ctermfg=Yellow   ctermbg=NONE   cterm=bold
-hi Repeat                           guifg=#FFFFFF   guibg=NONE  gui=NONE        ctermfg=White    ctermbg=NONE   cterm=NONE
+hi Repeat                           guifg=#96CDFF   guibg=NONE  gui=NONE        ctermfg=Blue     ctermbg=NONE   cterm=bold
 hi Special                          guifg=#FFFFFF   guibg=NONE  gui=italic      ctermfg=White    ctermbg=NONE   cterm=NONE
 hi SpecialComment                   guifg=#FF00FF   guibg=NONE  gui=NONE        ctermfg=Magenta  ctermbg=NONE   cterm=NONE
 hi Statement                        guifg=#96CDFF   guibg=NONE  gui=NONE        ctermfg=Blue     ctermbg=NONE   cterm=bold
@@ -135,8 +135,8 @@ hi def link cssPseudoClassId        Character
 hi def link cssClassName            Label
 hi def link cssValueLength          Number
 hi def link cssImportant            Structure
-hi def link cssStringQQ             Macro
-hi def link cssBraces               Repeat
+hi def link cssStringQQ             PreCondit
+hi cssBraces                        guifg=#FFFFFF   guibg=NONE  gui=NONE        ctermfg=White    ctermbg=NONE   cterm=NONE
 hi cssURL                           guifg=#00FFFF   guibg=NONE  gui=underline   ctermfg=Magenta  ctermbg=NONE   cterm=NONE
 hi cssCommonAttr                    guifg=NONE      guibg=NONE  gui=NONE        ctermfg=NONE     ctermbg=NONE   cterm=NONE
 
@@ -156,16 +156,33 @@ hi def link javaScriptPrototype     Structure
 hi def link javaScriptSpecial       Boolean
 hi def link javaScriptGlobalObjects Include
 hi def link javaScriptHtmlEvents    Structure
-hi def link javaScriptStringD       Macro
-hi def link javaScriptBraces        Repeat
+hi def link javaScriptStringD       PreCondit
+hi javaScriptBraces                 guifg=NONE   guibg=NONE  gui=NONE        ctermfg=NONE    ctermbg=NONE   cterm=NONE
 
-hi def link actionScriptStringD     Macro
+hi def link actionScriptStringD     PreCondit
+hi def link actionScriptNumber      Number
+hi def link actionScriptCase        Keyword
+hi def link actionScriptArray       Keyword
+hi def link actionScriptDate        Keyword
+hi def link actionScriptMath        Keyword
+hi def link actionScriptNumberObj   Keyword
+hi def link actionScriptObjects     Type
+hi def link as3Packages             Structure
+hi def link as3Classes              Structure
+hi def link as3Properties           Structure
+hi def link as3Functions            Structure
 hi def link as3Constants            Error
+hi def link flash8Classes           Structure
+hi def link flash8Properties        Structure
+hi def link as3Errors               Label
+hi def link as3Events               Label
+hi def link actionScriptMethods     Label
+hi actionScriptBraces               guifg=NONE   guibg=NONE  gui=NONE        ctermfg=NONE    ctermbg=NONE   cterm=NONE
 
 hi def link markdownId              Type
 hi def link markdownIdDeclaration   Type
 hi def link markdownCodeDelimiter   Error
-hi markdownLinkText                 guifg=#96ff32   guibg=NONE  gui=italic      ctermfg=Green    ctermbg=NONE   cterm=bold
+hi def link markdownLinkText        String
 
 hi def link yamlKey                 Keyword
 hi def link yamlAnchor              Number
