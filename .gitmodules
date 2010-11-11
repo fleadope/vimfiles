@@ -121,3 +121,18 @@
 [submodule "home/.vim/bundle/autocorrect.vim"]
 	path = home/.vim/bundle/autocorrect.vim
 	url = http://github.com/vim-scripts/autocorrect.vim.git
+[submodule "home/.vim/bundle/gundo"]
+	path = home/.vim/bundle/gundo
+	url = https://github.com/vim-scripts/Gundo.git
+[submodule "home/.vim/bundle/lustyjuggler"]
+	path = home/.vim/bundle/lustyjuggler
+	url = https://github.com/vim-scripts/LustyJuggler.git
+[submodule "home/.vim/bundle/indexedsearch.vim"]
+	path = home/.vim/bundle/indexedsearch.vim
+	url = https://github.com/vim-scripts/IndexedSearch.git
+[submodule "home/.vim/bundle/vim-ragtag"]
+	path = home/.vim/bundle/vim-ragtag
+	url = https://github.com/tpope/vim-ragtag.git
+[submodule "home/.vim/bundle/processing.vim"]
+	path = home/.vim/bundle/processing.vim
+	url = https://github.com/vim-scripts/Processing.git

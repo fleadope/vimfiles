@@ -80,7 +80,6 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 let g:SuperTabLongestHighlight = 1
 let g:acp_enableAtStartup=0
 
-
 " Key mapping
 " -----------------------------------------------------------------------------
 nnoremap j gj
@@ -99,7 +98,7 @@ map <C-l> <C-w>l
 nmap <tab> %
 vmap <tab> %
 
-" Map ,, and ;; to insert/append a single character
+" Insert/append a single character
 nmap ,, i_<esc>r
 nmap ;; a_<esc>r
 
@@ -112,9 +111,11 @@ map <silent> \ :silent nohlsearch<cr>
 
 " <F1> toggles fullscreen
 map <F2> :NERDTreeToggle<cr>
-nnoremap <silent> <F3> :YRShow<cr>
+nnoremap <silent> <F3> :LustyJuggler<cr>
 nnoremap <silent> <F4> :TlistToggle<cr>
 " <F5> in insert mode opens snippets for the filetype
+nnoremap <silent> <F6> :YRShow<cr>
+nnoremap <silent> <F7> :GundoToggle<cr>
 
 " Bubble single lines (requires unimpaired.vim)
 nmap <C-Up> [e

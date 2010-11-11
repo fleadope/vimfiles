@@ -7,10 +7,6 @@
 " -----------------------------------------------------------------------------
 
 
-" User themes and GUI settings
-" -----------------------------------------------------------------------------
-
-
 " User plugin configurations
 " -----------------------------------------------------------------------------
 " let g:yankring_history_dir=$HOME.'/.vim/tmp/yankring/'
@@ -28,6 +24,26 @@
 " -----------------------------------------------------------------------------
 
 
-" User event handling
+" User file type utility settings
 " -----------------------------------------------------------------------------
+
+
+" User file handling and settings
+" -----------------------------------------------------------------------------
+
+
+" User themes and GUI settings
+" -----------------------------------------------------------------------------
+
+
+" User GUI specific settings (could be in .gvimrc.local)
+" -----------------------------------------------------------------------------
+" if has('gui_running')
+  " set guifont=MesloLGM:h12
+  " colorscheme colorblind
+  " set background=dark
+  " if has('gui_macvim')
+    " set transparency=15
+  " end
+" endif
 
