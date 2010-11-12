@@ -77,8 +77,10 @@ let g:CommandTMaxHeight=20
 " Popup menu behavior and supertab
 set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-let g:SuperTabLongestHighlight = 1
+let g:SuperTabLongestHighlight=1
 let g:acp_enableAtStartup=0
+let g:gundo_disable=1
+let g:LustyExplorerSuppressRubyWarning=1
 
 " Key mapping
 " -----------------------------------------------------------------------------
@@ -135,7 +137,7 @@ nmap <silent> <leader>wt :set wrap!<cr>
 
 " Edit .vimrc and .vimrc.local
 nmap <leader>evm <C-w><C-v><C-l>:e $MYVIMRC<cr>
-nmap <leader>evl <C-w><C-v><C-l>:e .vimrc.local<cr>
+nmap <leader>evl <C-w><C-v><C-l>:e ~/.vimrc.local<cr>
 
 " Clear the search highlight
 map <silent> \ :silent nohlsearch<cr>
@@ -264,6 +266,7 @@ if has('gui_running')
   set go-=L
   set go-=r
   set go-=R
+  let g:gundo_disable=0
   if has('gui_macvim')
     macmenu &File.New\ Tab key=<nop>
     map <D-t> :CommandT<cr>

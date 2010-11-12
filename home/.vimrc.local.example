@@ -35,15 +35,19 @@
 " User themes and GUI settings
 " -----------------------------------------------------------------------------
 
+" set background=dark
+" colorscheme colorblind
+
+" set background=light
+" colorscheme snowblind
+
 
 " User GUI specific settings (could be in .gvimrc.local)
 " -----------------------------------------------------------------------------
 " if has('gui_running')
   " set guifont=MesloLGM:h12
-  " colorscheme colorblind
-  " set background=dark
   " if has('gui_macvim')
-    " set transparency=15
+    " set transparency=5
   " end
 " endif
 
