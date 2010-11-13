@@ -35,10 +35,9 @@
 " User themes and GUI settings
 " -----------------------------------------------------------------------------
 
-" set background=dark
 " colorscheme colorblind
-
-" set background=light
+" colorscheme bloodshot
+" colorscheme cataracts
 " colorscheme snowblind
 
 

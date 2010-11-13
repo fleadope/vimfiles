@@ -1,4 +1,3 @@
-" Vim color file: colorblind
 
 hi clear
 set background=dark
@@ -9,18 +8,18 @@ endif
 
 let g:colors_name = "colorblind"
 
-" Color values
-"
-" COLOR                                 BRIGHT
+" Colorblind Palette
 " -----------------------------------------------------------------------------
-" Black        #000000  ---         |   Gray             #555555  ---
+" COLOR                                 BRIGHT/BOLD
+" -----------------------------------------------------------------------------
+" Black        #000000  ---         |   White            #FFFFFF  ---
 " Red          #FF0000  Error       |   Light Red        #E52253  Include/Exception
 " Green        #3D9C00  DString     |   Light Green      #96FF32  String
 " Brown        #FF9600  Function    |   Yellow           #FFCD00  Label
 " Blue         #0080FF  Structure   |   Light Blue       #96CDFF  Keyword
 " Magenta      #FF00FF  SpComment   |   Light Magenta    #FF80FF  Type
 " Cyan         #00FFFF  Boolean     |   Light Cyan       #782DBD  Comment
-" Light Gray   #999999  Number      |   White            #FFFFFF  ---
+" Gray         #555555  ---         |   Light Gray       #999999  Number
 " -----------------------------------------------------------------------------
 
 hi Normal                           guifg=#FFFFFF   guibg=#000000 gui=NONE      ctermfg=White    ctermbg=NONE   cterm=NONE
