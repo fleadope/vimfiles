@@ -184,7 +184,7 @@ endfunction
 
 " Sort CSS selectors and allow for browser refresh
 function! s:setCSS()
-  map <leader>ss ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:let @/=''<cr>
+  map <leader>S ?{<CR>jV/^\s*\}?$<CR>k:sort<CR>:let @/=''<cr>
   call s:setBrowserEnv()
 endfunction
 
