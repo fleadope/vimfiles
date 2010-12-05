@@ -66,7 +66,7 @@ hi Operator                         guifg=#4F92D1   guibg=NONE  gui=NONE        
 hi PreCondit                        guifg=#006400   guibg=NONE  gui=italic      ctermfg=Green    ctermbg=NONE   cterm=bold
 hi PreProc                          guifg=#FF9600   guibg=NONE  gui=NONE        ctermfg=Yellow   ctermbg=NONE   cterm=bold
 hi Repeat                           guifg=#4F92D1   guibg=NONE  gui=NONE        ctermfg=Blue     ctermbg=NONE   cterm=bold
-hi Special                          guifg=#000000   guibg=NONE  gui=italic      ctermfg=Black    ctermbg=NONE   cterm=NONE
+hi Special                          guifg=#FFFFFF   guibg=NONE  gui=italic      ctermfg=White    ctermbg=NONE   cterm=NONE
 hi SpecialComment                   guifg=#C52696   guibg=NONE  gui=NONE        ctermfg=Magenta  ctermbg=NONE   cterm=NONE
 hi Statement                        guifg=#4F92D1   guibg=NONE  gui=NONE        ctermfg=Blue     ctermbg=NONE   cterm=bold
 hi StorageClass                     guifg=#4F92D1   guibg=NONE  gui=NONE        ctermfg=Blue     ctermbg=NONE   cterm=bold
