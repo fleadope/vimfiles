@@ -13,7 +13,7 @@ let g:colors_name = "cataracts"
 " COLOR                                 BRIGHT/BOLD
 " -----------------------------------------------------------------------------
 " Black        #000000  ---         |   White            #FFFFFF  ---
-" Red          #990000  Error       |   Light Red        #CB0000  Include/Exception
+" Red          #7F003D  Error       |   Light Red        #CB0000  Include/Exception
 " Green        #3D9C00  DString     |   Light Green      #006400  String
 " Brown        #C24A00  Function    |   Yellow           #7F003D  Label
 " Blue         #0000FF  Structure   |   Light Blue       #445588  Keyword
