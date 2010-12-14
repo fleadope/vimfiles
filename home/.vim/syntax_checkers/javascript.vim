@@ -25,6 +25,11 @@ endif
 " default config to nodelint's config right away...
 let s:config = $HOME.'/.vim/syntax_checkers/compilers/nodelint/config.js'
 
+" ...if the nodelint-config is setup by default use it...
+if filereadable($HOME.'/.vim/syntax_checkers/compilers/nodelint-config/config.js')
+  let s:config = $HOME.'/.vim/syntax_checkers/compilers/nodelint-config/config.js'
+endif
+
 " ...but if there is a global from .vimrc, use that...
 if exists('g:NodelintConfig')
   let s:config = g:NodelintConfig

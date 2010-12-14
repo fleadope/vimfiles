@@ -91,9 +91,6 @@
 [submodule "home/.vim/syntax_checkers/compilers/nodelint"]
 	path = home/.vim/syntax_checkers/compilers/nodelint
 	url = git://github.com/tav/nodelint.git
-[submodule "home/.vim/syntax_checkers/compilers/nodelint-config"]
-	path = home/.vim/syntax_checkers/compilers/nodelint-config
-	url = git://github.com/mkitt/nodelint-config.git
 [submodule "home/.vim/bundle/vim-unimpaired"]
 	path = home/.vim/bundle/vim-unimpaired
 	url = http://github.com/tpope/vim-unimpaired.git
@@ -136,3 +133,6 @@
 [submodule "home/.vim/bundle/processing.vim"]
 	path = home/.vim/bundle/processing.vim
 	url = https://github.com/vim-scripts/Processing.git
+[submodule "home/.vim/syntax_checkers/compilers/nodelint-config"]
+	path = home/.vim/syntax_checkers/compilers/nodelint-config
+	url = https://github.com/factorylabs/nodelint-config.git
